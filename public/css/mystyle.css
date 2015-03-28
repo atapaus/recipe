@@ -1,0 +1,19 @@
+.container{
+    margin-top: 25px;
+    width: 65%;
+}
+
+.btn{
+    margin-top: 20px;  
+    margin-left: 20px; 
+    background: white;
+    font-family:sans-serif;
+}
+
+.other-color{
+    background: lightblue;
+  }
+
+.pointer{
+    cursor:pointer; 
+}

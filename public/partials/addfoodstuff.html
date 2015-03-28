@@ -1,0 +1,38 @@
+<div ng-include src="'/partials/nav.html'"></div>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <div class='container-fluid'>
+        <div class='row'>
+            <div class='col-md-12'>
+                <div class="page-header">
+                  <h3>Lisää uusi ruoka-aine</h3>
+                </div>
+            </div>
+            <div class="col-md-6">
+                    <form role='form'>
+                        <div class="form-group">
+                        <label for="name">Ruoka-aine</label>
+                        <input type="text" id="name" class="form-control" ng-model='foodstuff.name'>
+                        </div>
+                        <div class="form-group">
+                            <label for="name">Yksikkö</label>
+                            <select class="form-control" ng-model='foodstuff.unit'>
+                                <option selected="selected" value="empty">Valitse</option>
+                                <option value="kilogramma">Kilogramma</option>
+                                <option value="gramma">Gramma</option>
+                                <option value="litra">Litra</option>
+                                <option value="desilitra">Desilitra</option>
+                            </select>
+                            <div class="form-group">
+                                <label for="price">Hinta/yksikkö</label>
+                                <input type="text" id="price" class="form-control" ng-model='foodstuff.price'>
+                            </div>    
+                        </div>
+                        <button type="button" class="btn btn-default" ng-click='addfoodstuff.save()'>Tallenna</button>
+                    </form>
+            </div>
+        </div>
+    </div>
+</div>
